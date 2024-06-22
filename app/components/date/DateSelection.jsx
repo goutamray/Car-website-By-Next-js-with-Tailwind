@@ -35,10 +35,10 @@ export default function DateSelection() {
                     <FaCalendarAlt className="text-accent"/>
                     <div className="text-[15px] uppercase font-bold "> Select Date </div>
                 </div>
-                <div>
-                  <div> {format(date[0].startDate, "dd/MM/yyy")}</div>
+                <div className="flex items-center gap-x-3 xl:ml-6">
+                  <div className="text-[13px] font-medium text-secondary "> {format(date[0].startDate, "dd/MM/yyy")}</div>
                   <FaArrowRightLong className="text-accent text-[13px]"/>
-                  <div className="flex items-center gap-x-3 xl:ml-6">
+                  <div className="text-[13px] font-medium text-secondary " >
                     {
                       date[0].endDate ? 
                        (<div>  {format(date[0].endDate, "dd/MM/yyy")} </div>)  : 
